@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5FAFF"
+    tools:context=".Badminton">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/backArrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:scaleType="center"
+            android:src="@drawable/back_arrow"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badminton"
+            android:layout_toRightOf="@+id/backArrow_iv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:padding="8dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/player1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Team A"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/setPlayer1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/player1_tv"
+                android:layout_alignBottom="@id/player1_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/player1_tv"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/scorePlayer1_tv"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player1_tv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="42sp" />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:padding="8dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/player2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Team B"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/setPlayer2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/player2_tv"
+                android:layout_alignBottom="@id/player2_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/player2_tv"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/scorePlayer2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player2_tv"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="42sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        >
+        <Button
+            android:id="@+id/pointA_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point A"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#1CD3A2"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/pointB_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point B"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1CD3A2"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Reset"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#1CD3A2"
+
+        />
+
+</LinearLayout>
