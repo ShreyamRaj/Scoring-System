@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5FAFF"
+    android:background="@drawable/login_bg_background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="#F5FAFF"
+        android:background="@drawable/login_bg_background"
         android:orientation="horizontal">
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_marginBottom="8dp"
             android:padding="8dp"
             android:text="Scoring System"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#F5FAFF"
+            android:background="@drawable/login_bg_background"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -52,27 +52,34 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:padding="8dp"
-                android:background="#F5FAFF"
+                android:background="@drawable/white_round_edge_bg"
                 android:elevation="8dp">
 
                 <TextView
                     android:id="@+id/badminton_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:text="Badminton" />
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="18dp"
-                    android:padding="2dp"
-                    android:scaleType="centerCrop"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/orange_button_bg"
+                    android:padding="8dp"
+                    android:text="Badminton"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@+id/badminton_tv"
-                    android:src="@mipmap/ic_badminton"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="21dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_badminton_foreground" />
 
             </RelativeLayout>
 
@@ -81,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#F5FAFF"
+                android:background="@drawable/white_round_edge_bg"
                 android:layout_margin="8dp"
                 android:padding="8dp"
                 android:elevation="8dp">
@@ -90,20 +97,28 @@
                     android:id="@+id/volleyball_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:text="Volleyball" />
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="18dp"
-                    android:padding="2dp"
-                    android:scaleType="centerCrop"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/orange_button_bg"
+                    android:padding="8dp"
+                    android:text="Volleyball"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@+id/volleyball_tv"
-                    android:src="@mipmap/ic_volleyball"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="21dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="21dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_volleyball_foreground" />
 
             </RelativeLayout>
 
@@ -114,6 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/login_bg_background"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -123,7 +139,7 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:padding="8dp"
-                android:background="#F5FAFF"
+                android:background="@drawable/white_round_edge_bg"
                 android:elevation="8dp"
 
                 >
@@ -132,21 +148,27 @@
                     android:id="@+id/basketball_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/orange_button_bg"
+                    android:padding="8dp"
                     android:text="Basketball"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="18dp"
-                    android:padding="2dp"
-                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@+id/basketball_tv"
-                    android:src="@mipmap/ic_basketball"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="21dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_basketball_foreground" />
 
             </RelativeLayout>
 
@@ -157,27 +179,31 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:padding="8dp"
-                android:background="#F5FAFF"
+                android:background="@drawable/white_round_edge_bg"
                 android:elevation="8dp">
 
                 <TextView
                     android:id="@+id/football_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="Football"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="18dp"
-                    android:padding="2dp"
-                    android:scaleType="centerCrop"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/orange_button_bg"
+                    android:padding="8dp"
+                    android:text="Football"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@+id/football_tv"
-                    android:src="@mipmap/ic_football"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="21dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_football" />
 
             </RelativeLayout>
 

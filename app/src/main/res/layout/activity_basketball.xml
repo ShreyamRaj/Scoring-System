@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5FAFF"
+    android:background="@mipmap/ic_basketball_wallpaper_foreground"
     tools:context=".Badminton">
     <RelativeLayout
         android:id="@+id/rl1"
@@ -24,17 +24,18 @@
             android:src="@drawable/back_arrow"
 
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Badminton"
-            android:layout_toRightOf="@+id/backArrow_iv"
             android:layout_centerVertical="true"
             android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/backArrow_iv"
             android:padding="8dp"
-            android:textSize="24sp"
+            android:text="BasketBall"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
 
     </RelativeLayout>
@@ -62,6 +63,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
+                android:textStyle="bold"
                 android:layout_marginLeft="21dp"
                 android:layout_marginRight="21dp"
                 android:gravity="center"
@@ -88,12 +90,13 @@
             <TextView
                 android:id="@+id/scorePlayer1_tv"
                 android:layout_width="match_parent"
-                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/player1_tv"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="42sp" />
 
 
@@ -119,6 +122,7 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginRight="21dp"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:padding="8dp"
                 android:text="Team B"
                 android:textColor="@color/black"
@@ -144,10 +148,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/player2_tv"
-                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="42sp" />
 
 

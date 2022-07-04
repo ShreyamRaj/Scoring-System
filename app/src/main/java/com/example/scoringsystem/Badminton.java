@@ -5,19 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.scoringsystem.databinding.ActivityBadmintonBinding;
 
 public class Badminton extends AppCompatActivity {
     TextView scoreTeamA_tv, scoreTeamB_tv, setTeamA_tv, setTeamB_tv;
     Button pointA_btn, pointB_btn, reset_btn;
     boolean turn;
     int scoreTeamA, scoreTeamB, setTeamA, setTeamB;
+    ImageView back_iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_badminton);
+
+        back_iv = findViewById(R.id.backArrow_iv);
 
         scoreTeamA_tv = findViewById(R.id.scorePlayer1_tv);
         scoreTeamB_tv = findViewById(R.id.scorePlayer2_tv);
@@ -45,13 +51,13 @@ public class Badminton extends AppCompatActivity {
                     scoreTeamB = 0;
                     setTeamA++;
                     if(setTeamA == 3){
-                        Toast.makeText(Badminton.this, "Team A won the Tournament", Toast.LENGTH_LONG).show();
+                        openDialog("Team A has won the tournament!");
                         setTeamA = 0;
                         setTeamB = 0;
                         setTeamA_tv.setText(Integer.toString(setTeamA));
                         setTeamB_tv.setText(Integer.toString(setTeamB));
                     }
-                    Toast.makeText(Badminton.this, "Team A won the set", Toast.LENGTH_LONG).show();
+                    openDialog("Team A has won the set");
                 }
                 scoreTeamA_tv.setText(Integer.toString(scoreTeamA));
                 scoreTeamB_tv.setText(Integer.toString(scoreTeamB));
@@ -68,13 +74,13 @@ public class Badminton extends AppCompatActivity {
                     scoreTeamB = 0;
                     setTeamB++;
                     if(setTeamB == 3){
-                        Toast.makeText(Badminton.this, "Team B won the Tournament", Toast.LENGTH_LONG).show();
+                        openDialog("Team B has won the tournament!");
                         setTeamA = 0;
                         setTeamB = 0;
                         setTeamB_tv.setText(Integer.toString(setTeamA));
                         setTeamB_tv.setText(Integer.toString(setTeamB));
                     }
-                    Toast.makeText(Badminton.this, "Team B won the set", Toast.LENGTH_LONG).show();
+                    openDialog("Team B has won the set");
 
                 }
                 scoreTeamA_tv.setText(Integer.toString(scoreTeamA));
@@ -95,7 +101,19 @@ public class Badminton extends AppCompatActivity {
             }
         });
 
+        back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
+
+    }
+
+    public void openDialog(String msg){
+        Dialog dialog = new Dialog(msg);
+        dialog.show(getSupportFragmentManager(),"dialog");
     }
 }
