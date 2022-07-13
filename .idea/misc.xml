@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/back_arrow.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/ic_main_wallpaper_bg_background.xml" value="0.166" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/ic_volleyball_wallpaper_background.xml" value="0.166" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/login_bg_background.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/login_bg_foreground.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/drawable/orange_button_bg.xml" value="0.2555" />
@@ -14,6 +16,7 @@
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/activity_get_otpactivity.xml" value="0.25" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/activity_splash.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/activity_volleyball.xml" value="0.25" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/ScoringSystem/app/src/main/res/layout/orange_button_bg.xml" value="0.20512820512820512" />
       </map>

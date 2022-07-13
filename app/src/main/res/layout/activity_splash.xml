@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_background"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/center_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=" "
+        />
+
+    <TextView
+        android:id="@+id/scoring_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center_element"
+        android:layout_alignEnd="@+id/center_element"
+        android:elevation="15dp"
+        android:layout_marginRight="-21dp"
+        android:shadowColor="@color/white"
+        android:text="Scoring"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/system_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-21dp"
+        android:layout_below="@+id/scoring_tv"
+        android:layout_toEndOf="@+id/center_element"
+        android:elevation="15dp"
+        android:shadowColor="@color/white"
+        android:text="System"
+        android:textColor="@color/orange"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
